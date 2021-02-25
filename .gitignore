@@ -1,0 +1,10 @@
+.vscode/**
+!.vscode/settings.json
+
+**/dist
+**/types
+!**/src/types
+**/node_modules
+
+*.log
+.env

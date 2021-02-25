@@ -1,0 +1,45 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "description": "Cordis example!",
+  "scripts": {
+    "lint": "eslint src --ext .ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cordis-lib/example.git"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.17",
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "eslint-config-marine": "^8.1.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "typescript": "^4.1.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ],
+    "*.tsx": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "@cordis/brokers": "^0.1.5",
+    "@cordis/common": "^0.1.5",
+    "@cordis/rest": "^0.1.5",
+    "@cordis/routers": "^0.1.5",
+    "discord-api-types": "^0.12.1",
+    "tslib": "^2.1.0"
+  }
+}
