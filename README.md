@@ -2,7 +2,7 @@
 
 This example is very barebones. Normally you would have multiple micro-services doing various things, using Redis to hold any data, creating a necessity for "common" libraries and overall, the need for a monorepo. This repo simply deploys a single worker bot that only processes `MESSAGE_CREATE` packets.
 
-NOTE: This layout will NOT work for a bot in over 2500 servers.
+NOTE: This layout will work even for single-sharded bots, the single worker here processing all the `MESSAGE_CREATE` packets from all shards.
 ___
 
 ### Requirements
