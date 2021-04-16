@@ -35,10 +35,9 @@
     ]
   },
   "dependencies": {
-    "@cordis/brokers": "^0.1.5",
-    "@cordis/common": "^0.1.5",
-    "@cordis/rest": "^0.1.5",
-    "@cordis/routers": "^0.1.5",
+    "@cordis/brokers": "^0.2.3",
+    "@cordis/common": "^0.2.3",
+    "@cordis/rest": "^0.2.3",
     "discord-api-types": "^0.12.1",
     "tslib": "^2.1.0"
   }
